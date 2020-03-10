@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My java page 2</title>
+  </head>
+  <body>
+  <button onclick="document.getElementById('myImage').src='./images/happy.jpg'">Happy?</button>
+  <img id="myImage" src="./images/happy.jpg" style="width:100px">
+  <button onclick="document.getElementById('myImage').src='./images/happyguy.jpg'">Different happy?</button>
+  <p>Click the screen :)</p>
+ <script>
+window.onclick = myFunction;
+function myFunction()
+{
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+}
+  </script>
+<p id="click" onclick="myFunction()">click me, its worth it.</p>
+
+  <script>
+function myFunction() {
+  document.getElementById("click").style.color = "purple";
+}
+  </script>
+  <p id="caps" onclick="myFunction()">Click me.</p>
+  <script>
+function myFunction() {
+  document.getElementById("caps").innerHTML = "I told u n not to press it";
+}
+  </script>
+  <button onclick="poopy()">Button</button>
+  <script>
+function poopy() {
+  document.getElementById("poopy").innerHTML = "you pressed the button...";
+}
+  </script>
+  <p id="poopy"></p>
+  </body>
+</html>
